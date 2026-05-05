@@ -3,52 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investona | FIRE Kalkulačka pro IT</title>
+    <title>Konzervativní Investorka | Komunita & Know-how</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,600&family=Inter:wght@300;400;600&display=swap');
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-sans { font-family: 'Inter', sans-serif; }
+    </style>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans antialiased">
-    <div class="min-h-screen flex items-center justify-center">
-        <div class="max-w-4xl w-full bg-gray-800 shadow-2xl rounded-xl overflow-hidden flex flex-col md:flex-row">
-            
-            <!-- Value Proposition (Levá strana) -->
-            <div class="w-full md:w-1/2 p-10 bg-gradient-to-br from-blue-900 to-gray-900 flex flex-col justify-center">
-                <div class="uppercase tracking-wide text-blue-400 text-sm font-bold mb-2">Dark Ops Lab: IT Segment</div>
-                <h1 class="text-3xl font-bold text-white mb-4">Optimalizujte cashflow. Akcelerujte nezávislost.</h1>
-                <p class="text-gray-300 mb-6">Nechcete sedět u kódu do 65 let. Získejte náš framework pro ochranu B2B příjmů a výpočet FIRE (Financial Independence) metrik.</p>
-                <ul class="text-gray-400 space-y-2 text-sm">
-                    <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> Data-driven investiční přístup</li>
-                    <li class="flex items-center"><svg class="w-4 h-4 mr-2 text-blue-500" fill="currentColor" viewBox="0 0 20 20"><path d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"></path></svg> Ochrana před inflační degradací</li>
-                </ul>
-            </div>
+<body class="bg-stone-50 text-slate-800 font-sans antialiased selection:bg-rose-200">
 
-            <!-- Lead Form (Pravá strana) -->
-            <div class="w-full md:w-1/2 p-10 bg-white">
-                <h2 class="text-2xl font-bold text-gray-800 mb-2">Získejte přístup</h2>
-                <p class="text-sm text-gray-500 mb-6">Zadejte kontakt, obratem posíláme přístup ke kalkulačce.</p>
-                
-                <!-- ZDE VLOŽTE URL MAKE.COM WEBHOOKU -->
-                <form action="VASE_MAKE_COM_WEBHOOK_URL" method="POST" class="space-y-4">
-                    <!-- Skrytý tag pro CRM -->
-                    <input type="hidden" name="segment" value="IT_Freelancer">
-                    
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Celé jméno</label>
-                        <input type="text" name="name" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-gray-900">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">Telefonní číslo</label>
-                        <input type="tel" name="phone" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-gray-900">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700">E-mail</label>
-                        <input type="email" name="email" required class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 text-gray-900">
-                    </div>
-                    <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                        Odeslat data
-                    </button>
-                </form>
-            </div>
+    <!-- Falešná navigace (Iluse portálu, ale bez odkazů) -->
+    <nav class="w-full bg-white border-b border-stone-200 py-4 px-6 md:px-12 flex justify-between items-center">
+        <div class="text-xl font-serif font-semibold tracking-tight text-slate-900">
+            Konzervativní<span class="text-rose-600">Investorka.</span>
         </div>
-    </div>
+        <div class="text-xs uppercase tracking-widest text-slate-400 font-semibold">
+            Privátní komunita
+        </div>
+    </nav>
+
+    <!-- Hlavní sekce -->
+    <main class="max-w-6xl mx-auto px-6 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        
+        <!-- Levá strana: Prodej vize a komunity -->
+        <div class="space-y-8">
+            <div class="inline-block px-3 py-1 bg-rose-100 text-rose-700 text-xs font-semibold uppercase tracking-wider rounded-full">
+                Otevřený přístup 2026
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl font-serif leading-tight text-slate-900">
+                Převezměte kontrolu nad svou <i class="text-rose-600">finanční nezávislostí.</i>
+            </h1>
+            
+            <p class="text-lg text-slate-600 leading-relaxed font-light">
+                Jsme nezávislá platforma pro ženy, které chtějí ochránit své úspory, pochopit trh a začít investovat bez zbytečného finančního žargonu a agresivních poradců.
+            </p>
+
+            <!-- 3 Důvody (Micro-copy) -->
+            <ul class="space-y-4 pt-4 border-t border-stone-200">
+                <li class="flex items-start">
+                    <span class="flex-shrink-0 w-6 h-6 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center text-sm mr-3 mt-0.5">✓</span>
+                    <span class="text-slate-700"><strong>Data místo emocí.</strong> Získáte exaktní návody, jak porazit inflaci.</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="flex-shrink-0 w-6 h-6 rounded-full bg-rose-100 text-rose-600 flex items-center justify-center text-sm mr-3 mt-0.5">✓</span>
+                    <span class="text-slate-700"><strong>Bezpečnost rodiny.</strong> Strategie pro tvorbu generačního bohatství.</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Pravá strana: Sběrný mechanismus (The Trap) -->
+        <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl shadow-stone-200/50 border border-stone-100 relative">
+            <div class="absolute -top-4 -right-4 bg-slate-900 text-white text-xs font-bold uppercase tracking-wider py-2 px-4 rounded-lg shadow-lg">
+                Zdarma
+            </div>
+            
+            <h2 class="text-2xl font-semibold mb-2 text-slate-900">Získejte náš startovací balíček</h2>
+            <p class="text-sm text-slate-500 mb-8">Zanechte nám kontakt a obratem vám do e-mailu pošleme průvodce "První kroky k vlastnímu portfoliu" a přístup ke konzultacím.</p>
+            
+            <!-- FORMULÁŘ -->
+            <form action="VASE_MAKE_COM_WEBHOOK_URL" method="POST" class="space-y-5">
+                <input type="hidden" name="segment" value="Edukace_Zeny">
+                <input type="hidden" name="source" value="Konzervativni_Investorka">
+                
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">Vaše jméno</label>
+                    <input type="text" name="name" required placeholder="Např. Jana Nováková" class="w-full px-4 py-3 bg-stone-50 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500 focus:bg-white transition-colors text-slate-900">
+                </div>
+                
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">Telefon (pro SMS potvrzení)</label>
+                    <input type="tel" name="phone" required placeholder="+420 777 000 000" class="w-full px-4 py-3 bg-stone-50 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500 focus:bg-white transition-colors text-slate-900">
+                </div>
+                
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 mb-1">E-mail</label>
+                    <input type="email" name="email" required placeholder="jana@email.cz" class="w-full px-4 py-3 bg-stone-50 border border-stone-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500 focus:bg-white transition-colors text-slate-900">
+                </div>
+                
+                <button type="submit" class="w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-4 rounded-lg shadow-md transition-transform transform hover:-translate-y-0.5 mt-4">
+                    Odeslat a získat přístup
+                </button>
+                
+                <p class="text-center text-xs text-slate-400 mt-4">Vaše data jsou u nás v bezpečí. Nikdy neposíláme spam.</p>
+            </form>
+        </div>
+    </main>
+
 </body>
 </html>
